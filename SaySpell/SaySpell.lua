@@ -15,7 +15,7 @@ function SaySpell:SaySpell_OnEvent()
 		local SpellName = arg10
 		local SpellLink = GetSpellLink(SpellName)
 
-		if (SpellName == "Starfall")								-- Druid
+		if (SpellName == "Starfall")					-- Druid
 		or (SpellName == "Barkskin")
 		or (SpellName == "Innervate") 
 		or (SpellName == "Cyclone")
@@ -27,7 +27,10 @@ function SaySpell:SaySpell_OnEvent()
 		or (SpellName == "Medallion of the Alliance")
 		or (SpellName == "Hex")
 		or (SpellName == "Cure Toxins")
-		or (SpellName == "Shield Wall")						-- Warrior
+		or (SpellName == "Shield Wall")					-- Warrior
+		or (SpellName == "Shadow Dance")				-- Rogue
+		or (SpellName == "Cloak of Shadows")
+		or (SpellName == "Evasion")					
 		then
 		   SendChatMessage(""..SpellLink.." casted!", PARTY, nil, 1)
 		end
